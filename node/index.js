@@ -1,10 +1,10 @@
 const fs = require('fs');
 
 const colors = {
-  error: '\x1b[31m',
   success: '\x1b[32m',
-  warn: '\x1b[33m',
   info: '\x1b[34m',
+  warn: '\x1b[33m',
+  error: '\x1b[31m',
   default: '\x1b[0m',
 };
 
@@ -19,10 +19,10 @@ function tabAlign(str, length = 10) {
 class Logger {
   static logPath = '.log/';
   static logNames = {
+    success: 'SUCCESS',
     info: 'INFO',
     warn: 'WARN',
     error: 'ERROR',
-    success: 'SUCCESS',
   };
 
   static measure(message, fun) {
