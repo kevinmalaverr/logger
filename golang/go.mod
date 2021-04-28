@@ -1,3 +1,3 @@
-module github.com/kevinmalaverr/logger/go
+module github.com/kevinmalaverr/logger/golang
 
 go 1.16
